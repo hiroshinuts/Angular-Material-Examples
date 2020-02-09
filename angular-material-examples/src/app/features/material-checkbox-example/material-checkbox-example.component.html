@@ -1,0 +1,45 @@
+<div class="container main-container">
+    <table class="mat-table" >      
+     
+            <tr class="mat-header-row">
+                <th class="mat-header-cell">
+                        <mat-checkbox #chkAll="matCheckbox" checked [(ngModel)]="checkAll" (change)="selectAll($event.checked)"></mat-checkbox>
+                    </th>
+                    <th class="mat-header-cell">SELECIONAR TUDO</th> 
+                </tr>
+                <tr class="mat-row">
+                <td class="mat-cell">
+                    <mat-checkbox #chk1="matCheckbox" [(ngModel)]="check1" checked ></mat-checkbox>
+                </td>
+                <td class="mat-cell">Checkbox1</td>    
+            </tr>
+            <tr class="mat-row">
+                <td class="mat-cell">
+                    <mat-checkbox #chk2="matCheckbox" [(ngModel)]="check2"  checked></mat-checkbox>
+                </td>
+                <td class="mat-cell">Checkbox2</td>    
+            </tr>
+            <tr class="mat-row">
+                <td class="mat-cell">
+                    <mat-checkbox #chk3="matCheckbox" [(ngModel)]="check3" (change)="Check45($event.checked)" checked ></mat-checkbox>
+                </td>
+                <td class="mat-cell">Checkbox3</td>    
+            </tr>
+            <tr class="mat-row">
+                <td class="mat-cell">
+                    <mat-checkbox #chk4="matCheckbox" [(ngModel)]="check4" disabled></mat-checkbox>
+                </td>
+                <td class="mat-cell">Checkbox4</td>    
+            </tr>
+            <tr class="mat-row">
+                <td class="mat-cell">
+                    <mat-checkbox #chk5="matCheckbox" [(ngModel)]="check5" disabled></mat-checkbox>
+                </td>
+                <td class="mat-cell">Checkbox5</td>    
+            </tr>       
+
+    </table>
+
+    <button type="button" (click)="LogaStatus()" class="btn btn-dark">Logar</button>
+
+</div>
