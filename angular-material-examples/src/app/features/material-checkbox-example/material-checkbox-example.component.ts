@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChildren } from '@angular/core';
+import { Component, OnInit, ViewChildren, SystemJsNgModuleLoaderConfig } from '@angular/core';
 import { MatCheckbox, MatCheckboxChange } from '@angular/material';
 
 @Component({
@@ -16,12 +16,15 @@ export class MaterialCheckboxExampleComponent implements OnInit {
   check4 = false;
   check5 = false;
   checkBoxConjunto = false;
+  modelo : Modelo;
 
 
-  constructor() { }	  
+  constructor() {   
+    this.modelo = new Modelo();
+   }	  
 
 
-  ngOnInit() {	
+  ngOnInit() {	 
 
   }
 
@@ -48,8 +51,25 @@ export class MaterialCheckboxExampleComponent implements OnInit {
     console.log(this.check3, 'CHECK3')
     console.log(this.check4, 'CHECK4')
     console.log(this.check5, 'CHECK5')
+
+    var abc : Modelo = new Modelo();
+    abc.nome = "Rafael";
+    abc.sobrenome = "ABDE";
+    abc.teste = "ANDOKSADSA";
+    this.modelo = abc;
   }
 
 
+
+
+}
+
+export class Modelo{
+
+  public nome;
+  public sobrenome;
+  public teste;
+
+  constructor(){} 
 
 }
