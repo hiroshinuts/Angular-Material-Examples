@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChildren } from '@angular/core';
+import { MatCheckbox, MatCheckboxChange } from '@angular/material';
 
 @Component({
   selector: 'app-material-checkbox-example',
@@ -6,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./material-checkbox-example.component.css']
 })
 export class MaterialCheckboxExampleComponent implements OnInit {
+
 
   checkAll = false;
   check1 = false;
@@ -15,13 +17,13 @@ export class MaterialCheckboxExampleComponent implements OnInit {
   check5 = false;
   checkBoxConjunto = false;
 
+
   constructor() { }	  
 
 
   ngOnInit() {	
-    //this.chk1.checked = true;
-  }
 
+  }
 
 
   selectAll(event){   
@@ -31,7 +33,8 @@ export class MaterialCheckboxExampleComponent implements OnInit {
     this.check4 = event;    
     this.check5 = event;
     console.log(event, 'SELECT ALL')
-  }	  
+
+  }
 
   Check45(event){
     this.check4 = event;
@@ -46,5 +49,7 @@ export class MaterialCheckboxExampleComponent implements OnInit {
     console.log(this.check4, 'CHECK4')
     console.log(this.check5, 'CHECK5')
   }
+
+
 
 }

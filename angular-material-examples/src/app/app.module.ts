@@ -18,6 +18,7 @@ import { MenuComponent } from './navegacao/menu/menu.component';
 import { rootRouterConfig } from './app.router';
 import { FeaturesComponent } from './features/features/features.component';
 import { MaterialCheckboxExampleComponent } from './features/material-checkbox-example/material-checkbox-example.component';
+import { MaterialModule } from './modules/material/material.module';
 
 
 
@@ -36,6 +37,7 @@ import { MaterialCheckboxExampleComponent } from './features/material-checkbox-e
     AppRoutingModule,
     FormsModule,
     BrowserAnimationsModule,
+    MaterialModule,
     [RouterModule.forRoot(rootRouterConfig, { useHash: false})]
   ],
   providers: [],
