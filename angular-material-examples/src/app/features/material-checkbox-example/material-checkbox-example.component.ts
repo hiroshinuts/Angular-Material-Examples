@@ -33,7 +33,6 @@ export class MaterialCheckboxExampleComponent implements OnInit {
     console.log(event, 'SELECT ALL')
   }	  
 
-
   Check45(event){
     this.check4 = event;
     this.check5 = event;
