@@ -16,9 +16,13 @@ import { HomeComponent } from './navegacao/home/home.component';
 import { FooterComponent } from './navegacao/footer/footer.component';
 import { MenuComponent } from './navegacao/menu/menu.component';
 import { rootRouterConfig } from './app.router';
-import { FeaturesComponent } from './features/features/features.component';
-import { MaterialCheckboxExampleComponent } from './features/material-checkbox-example/material-checkbox-example.component';
+import { MaterialCheckboxExampleComponent } from './angular/material-checkbox-example/material-checkbox-example.component';
 import { MaterialModule } from './modules/material/material.module';
+import { AngularExamplesComponent } from './angular/features/angular-examples.component';
+import { HtmlCssExamplesComponent } from './htmlcss/html-css-examples/html-css-examples.component';
+import { BorderComponent } from './htmlcss/features/border/border.component';
+
+
 
 
 
@@ -28,8 +32,11 @@ import { MaterialModule } from './modules/material/material.module';
     HomeComponent,
     FooterComponent,
     MenuComponent,
-    FeaturesComponent,
-    MaterialCheckboxExampleComponent
+    AngularExamplesComponent,
+    MaterialCheckboxExampleComponent,
+    HtmlCssExamplesComponent,
+    BorderComponent
+    
     
   ],
   imports: [

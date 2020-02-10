@@ -1,0 +1,17 @@
+.margin{
+
+    /* margin - espaço fora do objeto, nesse caso da div */
+    margin: 50px;
+    /* padding - espaço dentro do objeto */
+    padding: 50px;
+    background-color:  darkblue;
+    color:white;
+    width: 250px;
+    height: 250px;
+
+    /* border precisa de todas as propriedades para aparecer */
+    border-style: dotted;
+    border-color: red;
+    border-width: 5px;
+
+}
