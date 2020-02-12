@@ -1,0 +1,33 @@
+.main-container{
+
+    font-size: 22px;
+    font-family: sans-serif;
+    width: 700px;
+    margin: auto;
+    background-image: url('../../../../assets/bg.jpg');
+    background-attachment: scroll;
+    background-size: cover;
+
+
+    /* prioirzar a imagem de background do lado direito baixo */
+    background-position: right bottom;
+
+
+}
+
+
+/* espaçamento dos paragrafos */
+p{
+    line-height: 1.5;
+}
+
+
+/* posicionamento da imagem , para o texto se encaixar a direita */
+.img-html{
+    float: left;
+}
+
+/* posicionamento da imagem , para o texto se encaixar a esquerda */
+.img-css{
+    float: right;
+}

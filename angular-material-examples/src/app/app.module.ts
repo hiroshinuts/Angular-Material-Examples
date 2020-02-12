@@ -21,6 +21,7 @@ import { MaterialModule } from './modules/material/material.module';
 import { AngularExamplesComponent } from './angular/features/angular-examples.component';
 import { HtmlCssExamplesComponent } from './htmlcss/html-css-examples/html-css-examples.component';
 import { BorderComponent } from './htmlcss/features/border/border.component';
+import { ImagensComponent } from './htmlcss/features/imagens/imagens.component';
 
 
 
@@ -35,7 +36,8 @@ import { BorderComponent } from './htmlcss/features/border/border.component';
     AngularExamplesComponent,
     MaterialCheckboxExampleComponent,
     HtmlCssExamplesComponent,
-    BorderComponent
+    BorderComponent,
+    ImagensComponent
     
     
   ],

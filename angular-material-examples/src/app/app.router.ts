@@ -4,6 +4,7 @@ import { AngularExamplesComponent } from './angular/features/angular-examples.co
 import { MaterialCheckboxExampleComponent } from './angular/material-checkbox-example/material-checkbox-example.component';
 import { HtmlCssExamplesComponent } from './htmlcss/html-css-examples/html-css-examples.component';
 import { BorderComponent } from './htmlcss/features/border/border.component';
+import { ImagensComponent } from './htmlcss/features/imagens/imagens.component';
 
 
 
@@ -18,6 +19,7 @@ export const rootRouterConfig: Routes = [
     { path: 'angular', component: AngularExamplesComponent },
     { path: 'checkbox', component: MaterialCheckboxExampleComponent },
     { path: 'html-css', component: HtmlCssExamplesComponent},
-    { path: 'border', component: BorderComponent}
+    { path: 'border', component: BorderComponent},
+    { path: 'imagens', component: ImagensComponent}
 
 ];
