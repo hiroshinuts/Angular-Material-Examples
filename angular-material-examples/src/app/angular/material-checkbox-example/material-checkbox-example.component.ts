@@ -1,11 +1,20 @@
 import { Component, OnInit, ViewChildren, SystemJsNgModuleLoaderConfig } from '@angular/core';
 import { MatCheckbox, MatCheckboxChange } from '@angular/material';
+import {animate, state, style, transition, trigger} from '@angular/animations';
 
 @Component({
   selector: 'app-material-checkbox-example',
   templateUrl: './material-checkbox-example.component.html',
-  styleUrls: ['./material-checkbox-example.component.css']
+  styleUrls: ['./material-checkbox-example.component.css'],
+  animations: [
+    trigger('detailExpand', [
+      state('collapsed', style({height: '0px', minHeight: '0'})),
+      state('expanded', style({height: '*'})),
+      transition('expanded <=> collapsed', animate('225ms cubic-bezier(0.4, 0.0, 0.2, 1)')),
+    ]),
+  ],
 })
+
 export class MaterialCheckboxExampleComponent implements OnInit {
 
 
@@ -17,6 +26,7 @@ export class MaterialCheckboxExampleComponent implements OnInit {
   check5 = false;
   checkBoxConjunto = false;
   modelo : Modelo;
+  aparece = false;
 
 
   constructor() {   
@@ -59,6 +69,9 @@ export class MaterialCheckboxExampleComponent implements OnInit {
     this.modelo = abc;
   }
 
+  mudaAparece(){
+    this.aparece = (this.aparece) ? this.aparece = false : this.aparece = true;
+  }
 
 
 

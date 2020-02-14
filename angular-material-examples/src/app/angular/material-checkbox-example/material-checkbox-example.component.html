@@ -18,6 +18,24 @@
                 </td>
                 <td class="mat-cell">Checkbox2</td>    
             </tr>
+            <tr *ngIf="aparece"  class="mat-row">
+                <td class="mat-cell">
+                    <mat-checkbox #chk2="matCheckbox" [(ngModel)]="check2"  checked></mat-checkbox>
+                </td>
+                <td class="mat-cell">Checkbox2.1</td>    
+            </tr>
+            <tr *ngIf="aparece"  class="mat-row">
+                <td class="mat-cell">
+                    <mat-checkbox #chk2="matCheckbox" [(ngModel)]="check2"  checked></mat-checkbox>
+                </td>
+                <td class="mat-cell">Checkbox2.2</td>    
+            </tr>
+            <tr *ngIf="aparece"  class="mat-row">
+                <td class="mat-cell">
+                    <mat-checkbox #chk2="matCheckbox" [(ngModel)]="check2"  checked></mat-checkbox>
+                </td>
+                <td class="mat-cell">Checkbox2.3</td>    
+            </tr>
             <tr class="mat-row">
                 <td class="mat-cell">
                     <mat-checkbox #chk3="matCheckbox" [(ngModel)]="check3" (change)="Check45($event.checked)" checked ></mat-checkbox>
@@ -34,8 +52,9 @@
                 <td class="mat-cell">
                     <mat-checkbox #chk5="matCheckbox" [(ngModel)]="check5" disabled></mat-checkbox>
                 </td>
-                <td class="mat-cell">Checkbox5</td>    
+                <td class="mat-cell">Checkbox5</td>                
             </tr>       
+           
 
     </table>
     {{modelo?.nome}}
@@ -43,5 +62,6 @@
     {{modelo?.teste}}
 
     <button type="button" (click)="LogaStatus()" class="btn btn-dark">Logar</button>
+    <button type="button" (click)="mudaAparece()" class="btn btn-dark">Muda O aparecimento da Div</button>
 </div>
 
